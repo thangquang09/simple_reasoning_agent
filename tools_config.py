@@ -6,9 +6,7 @@ from google.genai.types import (
     GenerateContentConfig,
     Tool,
 )
-from setting import SEARCH_API_KEY, GOOGLE_API_KEY, end_fn_name
-
-model_name = 'gemini-2.0-flash'
+from setting import SEARCH_API_KEY, GOOGLE_API_KEY, model_name, end_fn_name
 
 def search(api_key:str = SEARCH_API_KEY, query: str = "", number_samples_return: int = 5) -> str:
     url = "https://api.serphouse.com/serp/live"
